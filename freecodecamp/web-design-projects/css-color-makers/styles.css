@@ -1,0 +1,95 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+  /*
+
+    Background-color é uma propriedade que pôe uma cor de fundo no elemento!
+
+    Existe um modelo de cor principal chamado rgb (red, green, black) que é usado em dispositivos eletronicos. Cada cor vai do 0 (nada dessa cor) até o 255 (o máximo dessa cor) e com isso nos vamos combinando esses valores para criar cores novas, exemplos: 
+    
+    Branco:
+    background-color: rgb(255, 255, 255);
+
+    Preto: 
+    background-color: rgb(0, 0, 0);
+    
+    Vermelho: 
+    background-color: rgb(255, 0, 0); 
+    
+    Verde: 
+    background-color: rgb(0, 255, 0); O valor 127 é o que mais se aproxima da tonalidade da cor quando usamos a palavra chave green
+    
+    Azul: 
+    background-color: rgb(0, 0, 255); 
+
+    A metade de cada uma dessas cores resultando em um tom mais escuro é exatamente 127. 
+
+    As cores primarias são vermelho, verde e azul e as cores secundarias são as cores que obtemos quando combinamos cores primarias:
+
+    Amarelo (vermelho + verde):
+    background-color: rgb(255, 255, 0);
+
+    Ciano (verde + azul):
+    background-color: rgb(0, 255, 255);
+
+    Magenta (vermelho + azul):
+    background-color: rgb(255, 0, 255);
+
+    As cores tercearias são combinações de uma cor primaria com uma cor secundaria proxima, ou seja, uma cor primaria pura com metade de uma cor primaria:
+    
+    laranja (vermelho + metade do verde): 
+    background-color: rgb(255, 127, 0);
+
+    Primaveira verde (verde + metade do azul):
+    background-color: rgb(0, 255, 127);
+
+    Violeta (azul + metade do vermelho):
+    background-color: rgb(127, 0, 255);
+
+    chartreuse green (verde + metade do vermelho): 
+    background-color: rgb(127, 255, 0);
+
+    Azure (azul + metade do verde)
+    background-color: rgb(0, 127, 255);
+
+    Rosa (vermelho + metade do azul)
+    background-color: rgb(255, 0, 127); 
+
+
+    Podemos aplicar cores usando códigos hexadecimais que é so mais uma forma de escrever os valores RGB, os valores hexadecimais são: 0 1 2 3 4 5 6 7 8 9 A B C D E F sendo três pares, um representa vermelho o outro representa verde e outro representa azul, por exemplo a cor branca #ffffff (todas as cores no máximo resultam em branco)
+
+    #00ff00 - Verde 
+    #007f00 - Metade do verde
+
+    O modelo HSL também é uma forma de colocarmos cores em nosso CSS (Matiz, Saturação e Leveza) eles aceitam tres valores, de 0 a 360 para Matiz, de 0 a 100% para saturação e de 0 a 240% para leveza 
+
+    hsl(240, 100%, 50%) - Azul
+
+    49
+
+    */
+
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto; 
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+  
+}
+
+.green {
+    background-color: rgb(0, 127, 0); 
+}
+
+.blue {
+    background-color: rgb(0, 0, 255);
+}

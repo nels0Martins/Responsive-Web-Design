@@ -1,0 +1,171 @@
+<!--
+    CATPHOTO APP É UM SITE CRIADO NO PRIMEIRO MODULO DO CURSO RESPONSIVE WEB DESIGN DA FREE CODE CAMP ONDE O FOCO É APRENDER O BÁSICO DO HTML
+-->
+<!DOCTYPE html> <!--Começamos informando que tipo de documento nós iremos criar: documento do tipo html (informando que estamos trabalhando com html5)-->
+
+<html> <!--Aqui nos criamos o documento html, é aqui que colocamos as tags head com suas configurações e a body que terá todo conteúdo do site!-->
+
+    <head> <!--Aqui dentro colocamos as configurações do nosso site, essa parte não é visivel ao usuario pelo navegador exceto a tag <title> e as favicons-->
+        <meta charset="UTF-8"> <!--Essa tag é usada para comunicar ao navegador qual o formato dos caracteres que vão ser usados nesse documento, significa que ele a partir dessa tag ele irá saber ler os acentos, cedilhas, simbolos e outras coisas da nossa lingua-->
+
+        <title>CatPhotoApp</title> <!--Aqui é onde fica o titulo da página, ou seja, aquele nome que fica dentro da janela/aba que podemos observar quando abrimos um site-->
+
+    </head>
+    <body> <!--Dentro dessa tag fica todo o conteúdo de um documento html, tudo que está aqui vai ser visivel para o usuario-->
+
+        <!--ABAIXO DAREMOS INICIO AO PROJETO!!-->
+
+        <main> <!--A Tag main serve como um container/caixa que guarda todo conteúdo principal de uma página na web, esse elemento é muito importante para a indexação do conteúdo na web-->
+
+            <header> <!--Header é o cabeçalho da página-->
+                <h1>CatPhotoApp</h1> <!--h1 é o titulo da página (existem até 6 niveis (h1 - h6) quanto maior o número menor importância)-->
+            </header> 
+            <!--Observe que o cabeçalho da página fica dentro do conteudo principal (main) e guarda o seu titulo de nivel 1 (h1)-->
+
+            <section> <!--Section significa seção e com isso nos estamos iniciando a primeira seção do nosso site-->
+                
+                <h2>Fotos de gatos</h2> <!--Título de nivel 2-->
+                
+                <p>Veja mais fotos de gatos em nossa galeria: <a href="https://freecatphotoapp.com" target="_blank">Galeria</a></p>
+                <!-- A tag p é um paragrafo-->
+                <!-- A tag a é uma ancora, dentro dela em href=""colocamos um link para ela ancorar e o atributo target="_blank" diz ao navegador que aquele link deve ser aberto em uma nova aba-->
+
+                <a href="https://freecatphotoapp.com" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Um gatinho laranja muito fofo!"></a>
+                <!--Aqui podemos ver mais um link que vai ser aberto numa aba externa mas dessa vez esse link é uma imagem-->
+                <!--A tag img é usada para adicionarmos uma imagem ao nosso conteúdo, dentro do atributo src="" adicionamos um caminho para aquela imagem ser acessada pelo nosso documento (esse caminho pode ser interno, ou seja, na propria maquina ou externo, ou seja, na web) e o atributo alt="" é muito importante para a acessibilidade do site, coloque sempre uma descrição dentro desse atributo-->
+            
+            </section>
+
+            <section> <!--Outra seção do nosso site-->
+
+                <h2>Listas sobre gatos</h2> <!--Titul de nivel 2 (note que esse titulo possui a mesma importância que o titulo da seção anterior mesmo estando abaixo dele)-->
+
+                <h3>Coisas que os gatos amam:</h3> <!--Titulo de nivel 3-->
+
+                <ul> <!--Lista não ordenada!-->
+                    <li>Nips de gato</li>
+                    <li>Lasers</li>
+                    <li>Lasanha</li> <!-- itens que vão ficar dentro da lista -->
+                </ul>
+
+                <figure> <!--Essa tag nos informa semanticamente que dentro dela existe um elemento de figura/foto/imagem e nos possibilitar utilizar a tag figcaption-->
+                    
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Deliciosa lasanha no prato!"> <!--Nossa tag img utilizada para colocar a nossa figura/imagem-->
+
+                    <figcaption>Gatos <em>amam</em> lasanha!</figcaption>
+                    <!--Tag utilizada para adicionar uma legenda a figura dentro da tag figure-->
+                    <!--A tag em é utilizada para dar enfâse a alguma palavra ou texto!-->
+                </figure>
+
+                <h3>Top 3 coisas que os gatos mais odeiam</h3> <!--Mais um titulo de nivel 3-->
+
+                <ol> <!--Lista ordenada! Essa lista ordena os elementos/itens dentro dela númericamente-->
+                    <li>Tratamento de pulgas</li>
+                    <li>Trovões</li>
+                    <li>Outros gatos</li> <!-- itens que vão ficar dentro da lista -->
+                </ol>
+
+                <figure> <!--Mais uma tag figure-->
+                        
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Cinco gatos fofos olhando ao redor de um campo!"> <!--Tag img usada para colcoar a nossa figura imagem-->
+
+                    <figcaption>Gatos <strong>odeiam</strong> outros gatos</figcaption>
+                    <!--Mais uma legenda para outra figura/imagem-->
+                    <!--A tag strong deixa o texto em negrito e isso é usado para dar um sentido de importância a uma palavra ou texto!-->
+
+                </figure>
+
+            </section>
+
+            <section> <!--Outra seção do nosso site-->
+                
+                <h2>Formulário sobre gatos</h2> <!--Mais um titulo de nivel 2-->
+
+                <form action="https://freecatphotoapp.com/submit-cat-photo" method="post"> 
+                <!--Essa tag delimita um formulario, dentro dela criamos um formulario. O atributo action="" é usado para nos colocarmos para onde serão enviados os dados preenchidos no formulário-->
+                <!--O method="get" repasa essas informações pela URL e o   method="post" repassa essas informações no corpo da mensagem de pedido http -->
+
+                <fieldset> <!--Esse elemento irá agrudar os elementos que estão dentro da tag form, ou seja, os inputs, bottoms e os labels-->
+
+                    <legend>Seu gato gosta mais das áreas internas ou das áreas externas?</legend> <!-- Esse elemento irá dar uma legenda para o fieldset -->
+
+                    <label for="interno">
+                        <input type="radio" name="interno" value="externo" id="interno" checked>Interno
+                    </label> <br>
+
+                    <label for="externo">
+                        <input type="radio" name="externo" value="externo" id="externo">Externo
+                    </label>
+
+                    <!-- O elemento label funciona como uma etiqueta para um elemento input, dentro do atributo for="" nos especificamos qual elemento input do formulário aquele label está etiquetando (dentro do for colocamos o mesmo nome que demos ao input pelo atributo name="")-->
+
+                    <!--O elemento input serve para que o usario entre com dados na nossa aplicação/site, nesses elementos ele irá preencher (ou marcar) informações que serão enviados para aquele link colocado no atributo action="" do formulario-->
+
+                    <!--O input do type="radio" cria uma caixa de marcação para o usuario marcar-->
+
+                    <!--Geralmente o name="" o id="" e o value de um elemento input possuem o mesmo nome-->
+
+                    <!--Usamos o atributo checked para deixarmos marcado uma opção premeditariamente-->
+
+                    <!--A tag br é usada para quebramos a linha e exibirmos o documento seguinte na linha abaixo-->
+
+                </fieldset>
+
+                <fieldset> <!--Mais um fieldset-->
+                    
+                    <legend>Qual a personalidade do seu gato?</legend>
+                    <!--Legenda para o fieldset-->
+
+                    <input type="radio" name="amavel" id="amavel" value="amavel" checked>
+                    <label for="amavel">Amável</label> <br>
+                    <!-- Aqui foi colocado o label ápos o input etiquetando o nome do input que será mostrado para o usuario, mas visualmente isso não mudou em nada para o usuario-->
+
+                    <input type="radio" name="preguicoso" id="preguicoso" value="preguicoso">
+                    <label for="preguicoso">Preguiçoso</label> <br>
+
+                    <input type="radio" name="energetico" id="energetico" value="energetico">
+                    <label for="energetico">Energetico</label> <br>
+
+                </fieldset> <br>
+
+                <input type="url" name="cat-phot-url" placeholder="Envie a foto do seu gato!" required>
+
+                <button type="subtmit">Enviar</button>
+
+                <!--O input type="url" é utilizado para que o usuario envie uma url por aquele campo-->
+
+                <!--O atributo placeholder é utilizado para que nós deixemos uma mensagem com certa trânsparencia dentro do placeholder-->
+
+                <!--O atributo required é utilizado para que nós deixemos aquele campo com preenchimento obrigatorio, ou seja, o usuario não consiguira enviar se não preencher aquele campo-->
+
+                <!--O botão com type="submit" é um botão usado para enviar todas as informações do formulario para o endereço digitado na action="" do formulário-->
+
+                </form>
+
+            </section>
+
+        </main>
+
+        
+        <footer> <!-- Rodapé do site, observe que esse é o unico elemento do site que não faz parte do conteúdo principal (main)-->
+
+            <p>
+                No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+            </p>
+
+            <p>Criado por <a href="https://www.linkedin.com/in/nelsonmarins2001/" target="_blank">Nelson Martins!</a></p>
+
+            <!--Dentro do footer é colocado algumas informaçoes importantes do site-->
+
+        </footer>
+
+    </body>
+
+    <!--Observe que tudo que foi colocado dentro do site obedece uma hierarquia, o que vem dentro da body está colocado mais a esquerda assim como a body que está dentro da tag html tb está mais a esquerda em relação a tag <html>, DEIXE O SEU CÓDIGO ORGANIZADO E BEM COMENTADO!
+
+        ** FIM!!! **
+     
+    -->
+
+
+</html>

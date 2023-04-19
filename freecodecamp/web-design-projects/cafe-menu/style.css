@@ -1,0 +1,225 @@
+body {
+     
+      /*
+      
+      background-color: burlywood ;
+      Propriedade utilizada para adicionarmos uma cor de fundo no elemento
+      
+      */
+
+      background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); 
+
+      /*
+        Usamos essa propriedade para adicionarmos uma imagem como plano de fundo de um elemento. Como nosso site é um menu de café nos usamos a função url() e dentro dela colocamos o link da imagem de fundo que desejamos.
+      
+      */
+
+      font-family: sans-serif;
+      /*Com essa propriedade podemos mudar as fontes do nosso site!*/
+
+      padding: 20px;
+      /*Adicionamos um espaçamento interno dentro da body para podermos ter mais espaço entre a body e o menu e consequentemente ter mais espaço para o menu*/
+    
+}
+
+.menu { /* Lá no html nos definimos a classe do elemento como menu e para estilizarmos classes colocamos um . seguido do nome da classe*/
+    
+    
+    /*width: 300px;
+    
+        Usamos essa propriedade para estilizarmos a largura de um elemento. Agora que colocamos nossos elementos dentro desta div vamos poder deixar todos eles dentro de um elemento que só ira 300px de largura 
+    
+        Modificamos em seguida a width para 80% da largura da body, observe no seu html que a div está dentro da body, logo, quando colocamos 80% de largura na div ela irá ocupar 80% do espaço da body que é seu elemento pai.
+    
+    */
+    width: 80%;
+    background-color: burlywood;
+    /*
+        Agora nos vamos utilizar está cor somente no fundo da div (isso irá nos ajudar a visualizar melhor a nossa div e as formatações que faremos nela
+    
+    */
+
+    margin-right: auto;
+    margin-left: auto;
+    /* 
+        margin é o espaçamento fora do elemento, é o espaço entre um elemento e o outro, deixando a margin da direita e da esquerda da div automaticas (auto) ela irá se centralizar porque o proprio css irá colocar a mesma quantidade de margin para os dois lados da div
+    
+    */
+
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+
+    /*Aqui na nossa div menu observamos que os paragrafos da esquerda e da direita tocam nas laterais do elemento e por isso nos colocamos 20% de padding (que é um espaçamento interno do documento) em ambos os lados da div*/
+
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+
+    /*Adicionamos também a mesma quantidade de espaçamento interno na parte de cima (top) e na parte de baixo (bottom) do elemento*/
+
+    padding: 20px;
+    /*Como todos os lados devem ter o mesmo tamanho podemos simplificar o codigo dessa meneira ou desta
+     
+    padding: 20px 20px 20px 20px; Isso é lido de cima para a esquerda no sentido horario: top, right, bottom, left
+    
+    */
+
+    max-width: 500px;
+    /* A largura atual dessa div é ocupar 80% do documento mas e se o documento for grande demais? Os elementos irão ficar muito distante um do outro, usamos a propriedade max-width para impedir que ele cresça mais do que 500px*/
+
+    border-radius: 15px;
+    /*Usamos essa propriedade para arrendodarmos as bordas  do elemento*/
+
+}
+
+h1, h2, p {
+    text-align: center;
+    /*
+        Propriedade utilizada para alinhar textos, os valores são: left
+        center, right, justify 
+    */
+}
+
+h1, h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /*Para não deixarmos todo o documento com a mesma fonte vamos adicionar somente no h1 e no h2 a fonte impact as fontes que estão apos a impact fazem parte da mesma familia de fontes para caso o navegador não tenha suporte a uma ele rapidamente tenta renderizar a a outra*/
+}
+
+h1 {
+    font-size: 40px;
+    /*Com essa propriedade nos modificamos o tamanho da fonte*/
+
+    margin-top: 0px;
+    /* O h1 já vem com uma margim muito grande na parte superior o que faz ela ser diferente da margin da parte inferior, por isso retiramos toda a sua margim superior com essa propriedade */
+
+    margin-bottom: 15px;
+    /* Diminuimos a margim inferior para 15px de modo que a distancia superior para o fim da div e a distancia inferior para o pagrafo fique a mesma coisa*/
+}
+
+img { 
+    display: block;
+    /*Transformando a imagem em um bloco, ou seja, agora a imagem ocupa todo o espaço de uma linha e não é mais embutida na linha*/
+
+    margin-left: auto;
+    margin-right: auto;
+    /* Deixando o margin left e o margin right com valores automaticos de ambos os lados*/
+
+    margin-top: -25px;
+    /* A margim inferior dos elementos h2 estão muito alta e uma das maneiras de diminuir essa margim é colocar uma margin negativa para o elemento de img, por isso a margin está - 25px */
+}
+
+h2 {
+    font-size: 30px;
+    /*Com essa propriedade nos modificamos o tamanho da fonte*/
+}
+
+hr {
+    height: 3px;
+
+    /*Essa propriedade nos possibilita alterar a altura de um elemento. Aqui nos estamos aumentando a altura do elemento hr*/
+
+    background-color: brown; 
+
+    border-color: brown;
+    /*Esse elemento já possui borda e para alterar a cor da borda de um elemento nos usamos a propriedade border-color */ 
+}
+
+.established {
+    font-style: italic;
+
+    /* A fonte vai ficar com estilo italico graças a essa propriedade*/
+}
+
+.flavor, .dessert { /* adicionamos a classe flavor um dos paragráfos da nossa página html*/ /*Adicionamos a classe dessert para outros paragrafos da nossa página html e estamos usando as mesmas estilizações para as duas classes dessa forma!*/
+
+    text-align: left; /*Iremos alinhar esse texto que anteriormente estava no centro dessa vez do lado esquerdo*/
+
+    width: 75%;
+    /* Imagine uma caixa do lado da outra, uma ocupa 50% e a outra 50% do lugar, na logica isso seria perfeito e elas ficariam colodas uma na outra, porem não funcionou com o paragrafo do item e o paragrafo do texto porque colocar elementos p embutidos no codigo cria um espacinho extra a direita do primeiro elemento e isso significa que não temos disponivel 100% do espaço para podermos colocar 50% para cada e por isso diminuimos 1% de cada para ver se funcionava, e funcionou!*/
+
+    /*Porem se em nosso codigo html nos deixarmos os elementos p juntos um do outro dessa forma
+        <p>oi</p><p>oi</p>
+
+    Isso aliado ao display inline-block ajudará aos elementos terem 100% de espaço e assim eles poderam ser alinhados lado a lado tendo assim 50% para cada
+    
+    */
+
+}
+
+.price {
+    text-align: right; /*E os preços serão aninhados a direita */
+    /*Observe que antes era tudo aninhado um abaixo do outro e agora um está do lado esquerdo e o outro ao lado direito*/
+
+    width: 25%; 
+
+    /* Imagine uma caixa do lado da outra, uma ocupa 50% e a outra 50% do lugar, na logica isso seria perfeito e elas ficariam colodas uma na outra, porem não funcionou com o paragrafo do item e o paragrafo do texto porque colocar elementos p embutidos no codigo cria um espacinho extra a direita do primeiro elemento e isso significa que não temos disponivel 100% do espaço para podermos colocar 50% para cada e por isso diminuimos 1% de cada para ver se funcionava, e funcionou!*/
+
+    /*Porem se em nosso codigo html nos deixarmos os elementos p juntos um do outro dessa forma
+        <p>oi</p><p>oi</p>
+
+    Isso aliado ao display inline-block ajudará aos elementos terem 100% de espaço e assim eles poderam ser alinhados lado a lado tendo assim 50% para cada
+
+    Porem o p do lado esquerdo possui mais caracteres que o p do lado direito e se nos deixarmos apenas 50% de espaço para ele quando diminuirmos o tamanho da janela a linha irá quebrar e o conteudo se partira, logo o ideal é dar 75% de largura para o primeiro paragrafo e apenas 25% para o segundo já que ele possui bem menos caracteres 
+    
+    */
+}
+
+.item p {
+    /*
+      Com esse seletor estamos dizendo para o css assim: No artigo de classe item estilize o elemento p.
+    */
+
+    display: inline-block; 
+    /* 
+        Essa tag deixará o elemento p com caracterista de elemento em bloco porem esse bloco ficará com caracterista de elemento de linha. Por fora ele é inline e por dentro ele é um bloco!
+    */
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*Adicionamos essa pequena margem em cima e em baixo de todos os elementos p para que a distância que existia entre cada elemento diminuisse*/
+
+    font-size: 18px;
+    /*Agora todos os paragrafos tiveram seu tamanho de fonte aumentado para 18px*/
+}
+
+.bottom-line {
+    margin-top: 25px;
+
+    /* Adicionamos uma classe e uma margim top de 25px para esse hr porque ele não tinha a mesma quantidade distância para o item do cardápio que o primeiro tem para o cabeçalho, com isso corrigimos tudo!*/
+}
+
+/* FOOTER (ORGANIZANDO  O CÓDIGO COMENTANDO ONDE FICA A ESTILIZAÇÃO DO RODAPÉ DO DOCUMENTO) */
+
+footer {
+    font-size: 14px; /* Diminuindo o tamanho da fonte dos elementos de rodapé*/
+
+
+}
+
+a {
+    color: black;
+    /* Deixando os links da mesma cor independentemente deles terem sido clicados ou não */
+}
+
+a:visited { /* :visited é uma pseudo classe, significa que tudo que eu colocar de estilização dentro desse seletor só ira acontecer quando o elemento for visitado (clicado pela primeira vez!*/
+
+    color: grey; /* Quando o elemento for visitado ele irá ficar com a cor grey*/
+
+}
+
+/*a:hover {  :hover é outra pseudo classe que será manifestada quando passarmos o mouse sobre o link, isso significa que tudo que colocarmos dentro desse seletor só irá acontecer quando passarmos o mouse em cima do link
+
+    color: brown;  Quando passarmos o mouse em cima do link ele irá ficar com a cor brown
+    
+}*/
+
+a:active { /* a:active é outra pseudo classe que será manifestada quando estivermos clicando no link, ou seja, tudo que que está dentro desse seletor só acontecera no momento em que estivermos clicando no link*/
+
+    color: brown;
+
+}
+
+.address { /* Classe colocada no ultimo paragrafo do footer*/
+    margin-bottom: 5px;
+    /* Mais uma vez diminuimos o espaço entre o elemento e o fim da div*/
+}

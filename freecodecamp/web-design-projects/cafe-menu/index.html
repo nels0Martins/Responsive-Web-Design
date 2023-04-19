@@ -1,0 +1,140 @@
+<!--
+    CAFE MENU - PROJETO DO SEGUNDO MODULO DO CURSO RESPONSIVE WEB DESIGN DA FREE CODE CAMP 
+
+    NESSE MODULO IREMOS APRENDER SOBRE CSS
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Essa tag nos possibilita visualizar o site nos dispositivos moveis de maneira semelhante a que vimos no computador-->
+
+    <title>Cardápio de Cafés</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <!--Essa tag é utilizada para importamos o css de um arquivo .css-->
+    
+     <!-- 
+        <style> 
+    Usamos a tag style para colocarmos os estilos da nossa página! (essa é apenas uma das maneiras de adicionarmos estilo a nossa página
+
+        h1 {
+            text-align: center;
+            /* Utilamos text-align para alinhar nossos textos, os valores são: left, center, right, justify 
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        Acima nos utilizamos 3 seletores diferentes para estilizar a mesma coisa, mas nos poderiamos ter colocado apenas um seletor com as 3 elementos que queremos centralizar, assim:    
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+      </style> 
+
+        Acima usamos uma tag para adicionar o style do documento porém a melhor forma é criar um arquivo .css separado, por isso foi criado a style.css que foi adicionado na head com a tag
+
+        <link rel="stylesheet" href="style.css">
+    
+    -->
+</head>
+<body>
+    <div class="menu"> <!--O elemento div é utilizado para ajudarmos a estilizar layouts, ou seja, div é uma caixa, nos colocamos elementos dentro dela para nos ajudar a estilizar layouts mais tranquilamente-->
+
+        <main> <!--Container que indica conteúdo principal-->
+        
+            <h1>CAMPER CAFE</h1>
+            <p class="established">Desde 2020</p>
+            <!-- Adicionamos uma classe ao primeiro paragrafo da pagina-->
+
+            <hr> <!--Usamos esse elemento para traçar uma linha entre os elementos-->
+        
+            <section> <!--Container que indica uma seção-->    
+
+                <h2>Cafés</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="Iconé do Café">
+                <!-- Icone de café -->
+
+                <article class="item"> <!--Container que indica um artigo no site-->
+                
+                <!-- Adicionamos ao article a classe item-->
+
+                    <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+
+                 <!--Como nos adicionamos um display inline-block para cada p precisamos excluir o espaço que há entre eles juntando eles diretamente no codigo, isso nos possibilitará dividir 50% do espaço da linha para cada um dos paragráfos que existem dentro do article-->
+                 
+                 <!--Dentro do seletor item p la no css nos transformamos todos os p que estão dentro dos articles de classe item em elementos inline-block-->
+                
+                </article>
+
+                <!-- Agora nos vamos adicionar as mesmas classes para os elementos de p abaixo:-->
+
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                </article>
+
+                <article class="item"> 
+                    <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                </article>
+
+                <article class="item"> 
+                    <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                </article>
+
+                <article class="item"> 
+                    <p class="flavor">Mocha</p><p class="price">4.50</p>
+                </article>
+
+            </section>
+
+            <section> <!--Essa nova seção falará de sobremesas, observe bem como é feita a divisão nesse site-->
+
+                
+                <h2>Sobremesas</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="Iconé de sobremesas">
+
+                <article class="item"> <!--Outro article para guardar itens e preços. Observe que ele possui o mesmo class dos outros articles até aqui-->
+
+                    <p class="dessert">Donut</p><p class="price">1.50</p>
+                    <!--Aqui já colocamos dois elementos de paragrafo juntos para garantir que não haja nenhum espaço entre eles-->
+                </article>
+               
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                </article>
+
+                  <article class="item">
+                    <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+                </article>
+
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                </article>
+
+            </section>
+
+        </main>
+
+        <hr class="bottom-line">
+
+        <footer> <!--Rodapé do site-->
+            <p>Visite o nosso <a href="https://www.freecodecamp.org" target="_blank">Website</a></p>
+            <p>123 Free Code Camp Drive</p>
+            <p class="address">Visite o meu <a href="https://www.linkedin.com/in/nelsonmarins2001/" target="_blank">LinkedIn</a>!!</p>
+        </footer>
+    </div>
+</body>
+</html>
